@@ -1,0 +1,6 @@
+databroker[all] >=2.0.0b2
+ipympl
+matplotlib
+nbgitpuller
+scikit-learn
+tiled[all]
