@@ -28,7 +28,7 @@
 
    ```
    # Create a new environment with conda...
-   conda create -n um2022 python=3.8
+   conda create -n um2022 python=3.9
    conda activate um2022
    # or with Python's built-in venv...
    python3 -V  # Confirm version is 3.7 or higher.
