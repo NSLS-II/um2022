@@ -1,6 +1,11 @@
+
 databroker[all] >=2.0.0b2
 ipympl
+joblib
+lmfit
 matplotlib
 nbgitpuller
+pytorch
 scikit-learn
 tiled[all]
+xarray
