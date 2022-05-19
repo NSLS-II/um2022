@@ -1,3 +1,17 @@
 #!/bin/bash
 
 MPLBACKEND=Agg python -c "import matplotlib.pyplot"  # Build font cache.
+
+# https://github.com/maffettone/xca#installation-guide
+conda activate xca
+git clone https://github.com/maffettone/xca /tmp/xca
+pushd /tmp/xca
+python -m pip install .
+popd
+
+# https://github.com/NSLS-II/constrained-matrix-factorization
+git clone https://github.com/nsls-ii/constrained-matrix-factorization /tmp/constrained-matrix-factorization
+pushd /tmp/constrained-matrix-factorization
+python -m pip install -r requirements.txt
+python -m pip install .
+popd

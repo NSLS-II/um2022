@@ -5,7 +5,10 @@ joblib
 lmfit
 matplotlib
 nbgitpuller
-torch
+numpy
 scikit-learn
+scipy
+tensorflow >= 2.1.0
 tiled[all]
+torch
 xarray
