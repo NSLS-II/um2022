@@ -5,7 +5,7 @@ joblib
 lmfit
 matplotlib
 nbgitpuller
-pytorch
+torch
 scikit-learn
 tiled[all]
 xarray
