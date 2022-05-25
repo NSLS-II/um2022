@@ -329,14 +329,14 @@ class NMFCompanion:
         self.fixed_components = fixed_components
         self.normalize = normalize
         if fig is None:
-            self.fig = figure()
+            self.fig = None #figure()
         else:
             self.fig = fig
-        axes = self.fig.subplots(2, 2)
-        self.component_ax = axes[0, 0]
-        self.weight_ax = axes[0, 1]
-        self.loss_ax = axes[1, 0]
-        self.residual_ax = axes[1, 1]
+        #axes = self.fig.subplots(2, 2)
+        #self.component_ax = axes[0, 0]
+        #self.weight_ax = axes[0, 1]
+        #self.loss_ax = axes[1, 0]
+        #self.residual_ax = axes[1, 1]
         self.plot_order = list(range(n_components))  # Order for plotting
         self.cmap = mpl.cm.get_cmap(cmap)
         self.norm = mpl.colors.Normalize(vmin=0, vmax=n_components)
@@ -491,14 +491,14 @@ class NMFCompanion:
     def report(self, **kwargs):
         """Allow the agent to summarize observations"""
         self.update_decomposition()
-        self.update_plot_order()
-        self.update_weights_plot()
-        self.update_component_plot()
-        self.update_loss_plot()
-        self.update_residual_plot()
+        #self.update_plot_order()
+        #self.update_weights_plot()
+        #self.update_component_plot()
+        #self.update_loss_plot()
+        #self.update_residual_plot()
 
         # Polish the rest off
-        refresh_figure(self.fig)
+        #refresh_figure(self.fig)
 
     def __len__(self):
         if self.dependent is None:
